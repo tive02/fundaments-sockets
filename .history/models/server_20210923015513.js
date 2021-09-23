@@ -37,8 +37,8 @@ class Server {
       });
 
       socket.on("enviar-mensaje", (payload, callback) => {
-        //const id = 123456;
-        //callback({ id, fecha: new Date().getTime() });
+        const id = 123456;
+        callback({ id, fecha: new Date().getTime() });
         //this.io.emit("enviar-mensaje", payload);
       });
     });
