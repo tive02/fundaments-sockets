@@ -35,7 +35,7 @@ class Server {
       console.log("Cliente Conectado", socket.id);
 
       socket.on("disconnect", () => {
-        console.log("Cliente Desconectado", socket.id);
+        console.log("Cliente Desconectado");
       });
     });
   }
