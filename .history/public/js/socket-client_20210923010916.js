@@ -24,11 +24,13 @@ socket.on("disconnect", () => {
 btnEnviar.addEventListener("click", () => {
   const mensaje = txtMensaje.value;
   console.log(mensaje);
-  const payload = {
-    mensaje,
-    id: "123ABC",
-    fecha: new Date().getTime(),
-  };
-
-  socket.emit("enviar-mensaje", payload);
+  //const payload = {
+  //    mensaje,
+  //    id: '123ABC',
+  //    fecha: new Date().getTime()
+  //}
+  //
+  //socket.emit( 'enviar-mensaje', payload, ( id ) => {
+  //    console.log('Desde el server', id );
+  //});
 });

@@ -21,14 +21,18 @@ socket.on("disconnect", () => {
   lblonline.style.display = "none";
 });
 
+socket.on('enviar-mensaje', (payload) => {
+    console.log( payload )
+
 btnEnviar.addEventListener("click", () => {
   const mensaje = txtMensaje.value;
   console.log(mensaje);
-  const payload = {
-    mensaje,
-    id: "123ABC",
-    fecha: new Date().getTime(),
-  };
-
-  socket.emit("enviar-mensaje", payload);
+  //const payload = {
+  //    mensaje,
+  //    id: '123ABC',
+  //    fecha: new Date().getTime()
+  //}
+  //
+  socket.emit("enviar-mensaje",mensaje
+  );
 });
