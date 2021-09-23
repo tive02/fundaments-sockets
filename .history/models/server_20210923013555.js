@@ -36,8 +36,8 @@ class Server {
         console.log("Cliente Desconectado", socket.id);
       });
 
-      socket.on("enviar-mensaje", (payload) => {
-        this.io.emit("enviar-mensaje", payload);
+      socket.on("enviar-mensaje", () => {
+        this.io.on("enviar-mensaje", "Escuchar desde el Server");
       });
     });
   }

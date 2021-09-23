@@ -37,7 +37,7 @@ class Server {
       });
 
       socket.on("enviar-mensaje", (payload) => {
-        this.io.emit("enviar-mensaje", payload);
+        console.log(payload);
       });
     });
   }

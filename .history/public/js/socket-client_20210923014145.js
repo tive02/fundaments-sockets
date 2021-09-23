@@ -21,7 +21,7 @@ socket.on("disconnect", () => {
 });
 
 socket.on("enviar-mensaje", (payload) => {
-  console.log(payload);
+  console.log("!!!!!");
 });
 
 btnEnviar.addEventListener("click", () => {
