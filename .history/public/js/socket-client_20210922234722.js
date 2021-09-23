@@ -13,7 +13,4 @@ socket.on("connect", () => {
 
 socket.on("disconnect", () => {
   console.log("Desconectado del servidor ");
-  lbloffline.style.display = "";
-
-  lblonline.style.display = "none";
 });
